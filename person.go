@@ -1,7 +1,6 @@
 package university
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/arthurh0812/university/country"
@@ -17,8 +16,16 @@ func (p *Person) FirstName() string {
 	return p.firstName
 }
 
+func (p *Person) SetFirstName(newName string) {
+	p.firstName = newName
+}
+
 func (p *Person) LastName() string {
 	return p.lastName
+}
+
+func (p *Person) SetLastName(newName string) {
+	p.lastName = newName
 }
 
 func (p *Person) DateOfBirth() time.Time {
