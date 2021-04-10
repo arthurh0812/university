@@ -1,0 +1,37 @@
+Person
+- firstName: string
+- lastName: string
+- dateOfBirth: time.Time
+
+
+Address
+- country: int (enum)
+- city: string
+- postalCode: int32
+
+
+ PhoneNumber
+ - country: int8 (enum)
+ - number: int32
+
+
+ Student
+ - international: bool
+ - isFullTime(): bool
+ - isOnProbation(): bool
+
+
+Professor
+- salary: float32
+
+
+ Enrollment
+ - date: time.Time
+ - code: string
+ - grade: int8
+
+
+Course
+- minStudents: int32
+- maxStudents: int32
+
