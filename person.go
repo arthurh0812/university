@@ -38,7 +38,7 @@ func NewPerson(firstName, lastName string, dob time.Time) *Person {
 		lastName: lastName,
 		dateOfBirth: dob,
 	}
-
+	return p
 }
 
 type Address struct {
